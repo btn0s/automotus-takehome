@@ -95,7 +95,7 @@ export function ZoneCard({ zone, occupancy, violationCount = 0, priority, compac
           noBorder && "ring-0 shadow-none border-0 hover:ring-0"
         )}
       >
-        <CardHeader className="pb-2 px-3 pt-3">
+        <CardHeader className="pb-1 px-3">
           <div className="flex items-start justify-between">
             <div className="flex flex-col gap-0.5">
               <CardTitle className="text-base font-bold leading-tight">{zone.name}</CardTitle>
@@ -112,7 +112,7 @@ export function ZoneCard({ zone, occupancy, violationCount = 0, priority, compac
             </CardAction>
           </div>
         </CardHeader>
-        <CardContent className="px-3 pb-3">
+        <CardContent className="px-3">
           <div className="flex items-center gap-1.5 flex-wrap">{badges}</div>
         </CardContent>
       </Card>
